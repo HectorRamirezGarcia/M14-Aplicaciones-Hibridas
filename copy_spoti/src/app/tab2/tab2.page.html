@@ -1,0 +1,25 @@
+<link href="http://fonts.cdnfonts.com/css/poetsen-one" rel="stylesheet">  
+
+<ion-header>
+
+  <ion-toolbar class="new-background-color2">
+  </ion-toolbar>
+  <ion-toolbar class="new-background-color">
+    <ion-title>
+      Albums
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <div class="lista-style" *ngFor="let sw of albums;let i=index;">
+      <ion-item-sliding id="item100">
+        <ion-item>
+          <ion-label class="text-font">{{sw.name}}</ion-label>
+          <img src="assets/img/albums/{{sw.img}}">
+      </ion-item>
+    </ion-item-sliding>
+  </div>
+</ion-list>
+</ion-content>
